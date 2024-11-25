@@ -27,5 +27,5 @@ int main(void) {
 	
 	printf("%lld\n", buf[K]);
 	
-	return 1;
+	return 0;
 }
