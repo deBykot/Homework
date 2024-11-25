@@ -1,0 +1,86 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage[final]{graphicx} 
+\usepackage{geometry} 
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{pdfpages}
+\usepackage{nccmath}
+
+\geometry{left=2cm}
+\geometry{right=1.5cm}
+\geometry{top=1cm}
+\geometry{bottom=2cm}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \textbf{МОСКОВСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ}\\
+        имени М.В. Ломоносова\\
+        \vspace{0.5cm}
+        \textbf{Факультет вычислительной математики и кибернетики}\\
+        \vspace{5.5cm}
+        \textbf{\Large Компьютерный практикум по учебному курсу}\\
+        \textbf{\Large «ВВЕДЕНИЕ В ЧИСЛЕННЫЕ МЕТОДЫ»}\\
+        \vspace{4.5cm}
+        \textbf{\Large ЗАДАНИЕ № 1}\\
+        \vspace{1cm}
+        \textbf{\LARGE ОТЧЕТ}\\
+        \textbf{\LARGE о выполненном задании}\\
+        \vspace{2cm}
+        студента 214 учебной группы факультета ВМК МГУ\\
+        \textbf{\large Исмурзенова Абая Ерденовича}\\
+        \vspace{\fill}
+        гор. Москва\\
+        2024 г.
+    \end{center}
+\end{titlepage}
+	
+	%содержание
+	\newpage
+	\tableofcontents
+	
+	%текст
+	
+	\newpage
+	\chapter{}
+	\section{Постановка задачи}
+	
+    Найдите приближенное значение интеграла методом трапеций, разбив интервал интегрирования на $n$ равных частей, где $n = 16, 32, 64$.\\[0.5cm]
+    	
+    	
+    	Интеграл:\\[-1.5cm]
+
+	\begin{equation*}
+		\hspace{-7cm}
+    		\int_{a}^{b} \frac{1}{\left(25x^2 + 1\right)\sqrt{3x - x^2}} \, dx
+	\end{equation*}
+	
+	Рассмотрите два отрезка интегрирования:
+	
+	\begin{enumerate}
+		\item a = 1, b = 2
+		\item a = 0, b = 3
+	\end{enumerate}
+	
+	Сравните результаты с аналитическим значением интеграла.
+	Подберите более эффективный численный метод вычисления интеграла для второй задачи
+	
+	\section{Цели и задачи}
+	
+	\begin{enumerate}
+		\item Найти приблеженние значение данного интеграла методом трапеций 
+		\item Подобрать более эффективный метод вычисления интеграла для второй подзадачи
+		
+	\end{enumerate}
+	
+	\section{Описание метода трапеций}
+	Нам нужно приблеженно вычислить определенный интеграл
+	$\int_{a}^{b} f(x) dx$, подынтегральная функция которого $y = f(x)$ непрерывна на отрезке $[a, b]$. Для этого разделим отрезок $[a, b]$ на несколько равных интервалов длины h точками $a = x_0 < x_2 < ... < x_{n-1} < x_n = b$. Количество полученных интервалов обозначим за n.
+	
+	
+\end{document}
